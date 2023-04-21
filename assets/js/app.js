@@ -21,11 +21,19 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
+function cpyfunction(){
+    var copyText = document.getElementById("cpyemail");
+    navigator.clipboard.writeText("monteil.ph@free.fr");
+    document.getElementById("cpymsg").style.display = "initial";
+}
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   window.scrollTo({top: 0, behavior: 'smooth'});
 } 
+function toContact(){
+    document.body.scrollTop = 600;
+    window.scrollTo({top: 6000, behavior: 'smooth'});
 
+}
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));

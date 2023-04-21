@@ -3,6 +3,11 @@
     padding:0;
     margin:0;
 }
+
+.coverbook {
+    width:750px;
+    height:600px;
+}
 .maincontainer{
     background-color: rgba(71, 69, 98, 0.4);
     height:100%;
@@ -188,6 +193,10 @@ section {
     .nav-links ul {
         margin-right:50%;
     }
+    .btnbuy img{
+        height:200px;
+        width:200px;
+    }
 }
 @media screen and (max-width:500px){
     .coverbook{
@@ -223,7 +232,9 @@ section {
 }
 
 
-
+a:hover{
+    cursor: pointer;
+}
 section h3 {
     color:white;
     font-family: 'Poppins', sans-serif;
@@ -237,6 +248,7 @@ section h1 {
     float: left;
     width: 33.33%;
     padding: 5px;
+    
 }
 
 .row::after {
@@ -244,3 +256,17 @@ section h1 {
     clear: both;
     display: table;
   }
+
+.btnbuy{
+    float: left;
+    width: 33.33%;
+    padding: 25px;
+}
+.emailbtn{
+    color:white;
+    transition: all ease 0.3s;
+}
+.emailbtn:hover{
+    cursor: pointer;
+    color:rgb(157, 197, 224);
+}
