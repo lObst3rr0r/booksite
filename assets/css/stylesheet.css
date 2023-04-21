@@ -1,31 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&display=swap');
 body {
-    background-image: url("../img/bg.jpeg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: rgb(33, 33, 45);
+    padding:0;
+    margin:0;
 }
-.maincontainer {
-    background: rgba(119, 138, 115, 0.9);
-
+.maincontainer{
+    background-color: rgba(71, 69, 98, 0.4);
     height:100%;
-    width:auto;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top:2%;
-    border-radius: 4px;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    border-radius: 5px;;
 }
 
+.topsection {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    color:white;
+    font-size:14px;
+}
 .avatarimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    height:150px;
-    width:150px;
-    border:4px solid rgb(51, 97, 213);
+    height:120px;
+    width:120px;
+    border:4px solid rgba(77, 96, 221, 0.6);
 }
+
 .containertop{
     background: rgba(42, 54, 40, 0.4);
+}
 
+h1 {
+    font-size:52px;
+    color:rgb(213, 213, 213);
+    text-align: center;   
+}
+.nav-links {
+    background-color: rgba(169, 169, 169, 0.1);
+}
+.nav-links a {
+    color:white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:18px;
+    text-decoration-line: none;
+}
+.nav-links .active {
+    color:rgb(125, 184, 247);
+    font-weight:bold;
+}
+.nav-links li{
+    list-style-type:none;
+    padding-left:10px;
+
+}
+.nav-links ul {
+    display:inline-flex;
+    margin-right:100%;
+
+}
+.separatorli{
+    color:rgb(193, 193, 193);
+    font-size:16px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.quotetext {
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left:20%;
+    margin-right:20%;
+    text-align:center;
+    font-size:25px;
+    font-weight:lighter;
+    font-style:italic;
+}
+.earthspin{
+    border-radius: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+    width:300px;
+    border:5px solid rgba(71, 69, 98, 0.4);
+}
+
+section {
+    display:grid;
+    place-items:center;
+    align-content:center;
+    min-height:100vh;
+}
+
+.hidden {
+    opacity:0;
+    filter:blur(5px);
+    transform:translateX(-100%);
+    transition:all 1s;
+}
+.show {
+    opacity:1;
+    filter:blur(0);
+    transform:translateX(0);
+
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition:none;
+    }
 }
