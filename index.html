@@ -9,6 +9,9 @@
     <title>.:: Le temps d'une histoire ::.</title>
 </head>
 <body>
+    <div class="upbutton" id="btnup">
+        <button onclick="topFunction()"><img src="assets/img/arrow.png" rel="arrow"></button>
+    </div>
     <div class="maincontainer">
     <div class="topsection">
             <img class="avatarimg" src="assets/img/avatar.jpg" alt="Avatar">
@@ -18,31 +21,58 @@
                 <ul>
                     <li><a href="index.html" class="active">Acceuil</a></li>
                     <li class="separatorli">/</li>
-                    <li><a href="bio.html">Biographie</a></li>
+                    <li><a href="bio.html">Projets</a></li>
                     <li class="separatorli">/</li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
     </div>
+    
     <div class="bottomsection">
         <section class="hidden">
             <h1>Le temps d'une histoire</h1>
             <img class="earthspin"src="/assets/img/earth.gif" rel="spinning earth">
         </section>
+        <hr>
+
         <section class="hidden">
+            <div class="row">
+                <img class="decoimage" id="portrait" src="assets/img/teutonique.jpg"style="border-radius:3px;height:400px;width:300px;">
+                <img class="decoimage" id="portrait"src="assets/img/venus.png" style="border-radius:3px;height:400px;width:300px;">
+                <img class="decoimage" src="assets/img/chauvet.jpg" style="border-radius:3px;">
+
+            </div>
             <h3 class="quotetext">
                 Le temps d'une histoire se déroule sur une année.<br>
 Après une rapide présentation des échelles de temps, une étoile explose.<br>
 De l'immense amas de poussières et de gaz résultant de cette explosion, naîtra le système solaire.<br>
 Nous sommes le 1er janvier de l'an I, et tout au long des mois de cette année, nous découvrons l'histoire de la Vie.
             </h3>
-            <img src="assets/img/Dino_mourant.jpeg" style="border-radius:3px;"rel="dino mourant">
-            <img src="assets/img/Manchots_adelie.jpeg" rel="penguins" style="border-radius:3px; height:200px;width:400px;">
-        </section>
+            <div class="row">
+                <img class="decoimage" src="assets/img/Dino_mourant.jpeg" style="border-radius:3px;"rel="dino mourant">
+                <img class="decoimage" src="assets/img/Manchots_adelie.jpeg" rel="penguins" style="border-radius:3px; height:200px;width:400px;">
+            </div>
 
-        <!--<img src="/assets/img/couvertureTDH.png" rel="Couverture Livre">
-        -->
+        </section>
+        <hr>
+        <section class="hidden">
+            <img class="avatarimg" src="assets/img/avatar.jpg" style="height:300px;width:300px;"alt="Avatar">
+
+            <p class="quotetext" style="font-style: normal;">
+                Philippe Monteil est professeur de mathématique. Etudiant, il a travaillé sur les modèles de temps en science fondamentale.
+Passionné de préhistoire et de spéléologie, il cherche à comprendre les mystères de la Terre.
+            </p>
+        </section>
+        <hr>
+        <section class="hidden">
+            <h1>Acheter le livre:</h1>
+            <img class="coverbook"src="assets/img/couvertureTDH.png" alt="couverturelivre">
+            <h3>Retrouver ce livre sur:</h3>
+            <a target="_blank" href="https://amazon.fr"><img class="amazonbuy"style="width:200px;height:120px;background-color: white;border-radius:5px;"src="assets/img/amazonpic.png" alt="amazonpic"></a>
+        </section>
+        <hr>
         </div>
     </div>
+
 </body>
 </html>

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&display=swap');
-body {
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&family=Poppins&display=swap');body {
     background-color: rgb(33, 33, 45);
     padding:0;
     margin:0;
@@ -59,7 +58,7 @@ h1 {
 }
 .nav-links ul {
     display:inline-flex;
-    margin-right:100%;
+    margin-right:70%;
 
 }
 .separatorli{
@@ -116,3 +115,132 @@ section {
         transition:none;
     }
 }
+.upbutton {
+    position:fixed;
+    bottom:20px;
+    left:30px;
+    z-index:99;
+    margin-left:85%;
+    margin-right:95%;
+}
+.upbutton button {
+    height:auto;
+    width:auto;
+    background-color:rgba(77, 96, 221, 0.1);
+    border:4px solid rgb(88, 87, 87);
+    border-radius: 50%;
+    transition:all 0.4s ease;
+}
+.upbutton img {
+    height:140px;
+    width:140px;
+    border-radius: 50%;
+
+}
+
+.upbutton button:hover {
+    border:4px solid rgb(128, 128, 128);
+    cursor:pointer;
+    background-color:rgba(206, 206, 206, 0.8);
+}
+
+
+@media screen and (max-width:1270px){
+    .coverbook{
+        width:600px;
+        height:400px;
+    }
+    .upbutton img{
+        height:80px;
+        width:80px;
+    }
+    .decoimage{
+        height:200px;
+        width:150px;
+    }
+}
+@media screen and (max-width:1000px){
+    .coverbook{
+        width:420px;
+        height:350px;
+    }
+    .upbutton img{
+        height:80px;
+        width:80px;
+    }
+}
+@media screen and (max-width:800px){
+    .coverbook{
+        width:400px;
+        height:350px;
+    }
+    .upbutton img{
+        height:40px;
+        width:40px;
+    }
+    .maincontainer {
+        width:80%;
+    }
+    .avatarimg {
+        height:100px;
+        width:100px;
+    }
+    .nav-links ul {
+        margin-right:50%;
+    }
+}
+@media screen and (max-width:500px){
+    .coverbook{
+        width:350px;
+        height:250px;
+    }
+    .upbutton{
+        left:20px;
+    }
+    .upbutton img{
+        height:30px;
+        width:30px;
+    }
+    .maincontainer {
+        width:80%;
+    }
+    .avatarimg {
+        height:100px;
+        width:100px;
+    }
+    .nav-links ul {
+        margin-right:30%;
+    }
+    .amazonbuy {
+        height:100px;
+        width:80px;
+    }
+    .quotetext{
+        margin-left:5%;
+        text-align: left;
+        margin-right:25%;
+    }
+}
+
+
+
+section h3 {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size:32px;
+}
+
+.decoimage {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
