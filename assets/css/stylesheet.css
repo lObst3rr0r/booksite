@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&family=Poppins&display=swap');body {
-    background-color: rgb(33, 33, 45);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&family=Poppins&display=swap');
+body {
+    background-image: url('../img/wpbg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(10, 13, 46);
     padding:0;
     margin:0;
 }
@@ -9,7 +13,7 @@
     height:600px;
 }
 .maincontainer{
-    background-color: rgba(71, 69, 98, 0.4);
+    background-color: rgba(14, 14, 33, 0.9);
     height:100%;
     width:60%;
     margin-left:auto;
@@ -159,7 +163,7 @@ section {
         height:80px;
         width:80px;
     }
-    .decoimage{
+    .decoimage img {
         height:200px;
         width:150px;
     }
@@ -248,7 +252,9 @@ section h1 {
     float: left;
     width: 33.33%;
     padding: 5px;
-    
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row::after {
@@ -269,4 +275,33 @@ section h1 {
 .emailbtn:hover{
     cursor: pointer;
     color:rgb(157, 197, 224);
+    font-size:20px;
+}
+
+.publication ul li{
+    text-decoration: none;
+}
+.publication ul li::before{
+    content: "\2022";
+    color: rgb(147, 150, 241);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1rem;
+    font-size:32px;
+    margin-left: -1em;
+    
+}
+.publication li a:hover{
+    color:rgb(5, 128, 5);
+    font-size:28px;
+}
+.publication li a {
+    color:white;
+    font-size: 27px;
+    text-decoration: none;
+    transition:all 0.3s ease;
+}
+
+section ul li {
+    text-decoration-line:none;
 }
