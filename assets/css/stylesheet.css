@@ -18,6 +18,8 @@ body {
     width:60%;
     margin-left:auto;
     margin-right:auto;
+    border: 3px solid #dadada;
+    border-radius: 9px;
     margin-top:40px;
     border-radius: 5px;;
 }
@@ -304,4 +306,12 @@ section h1 {
 
 section ul li {
     text-decoration-line:none;
+}
+
+footer {
+    color:white;
+    font-size:36px;
+}
+.footerhr {
+    border-color:white;
 }
