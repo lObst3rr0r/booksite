@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&family=Poppins&display=swap');
 body {
-    background-image: url('../img/wpbg.jpg');
+    background-image: url('../img/bg.jpeg'), url('../img/dirt.jpg'), url('../img/dirt2.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgb(10, 13, 46);
+    background-size: contain, 100% 100%, 100% 100%;
+    background-position: center top, center center, center bottom;
+    background-attachment: scroll, fixed, scroll;
+
+    background-color: rgb(156, 157, 171);
     padding:0;
     margin:0;
 }
@@ -13,7 +16,7 @@ body {
     height:600px;
 }
 .maincontainer{
-    background-color: rgba(14, 14, 33, 0.9);
+    background-color: rgba(60, 80, 66, 0.9);
     height:100%;
     width:60%;
     margin-left:auto;
@@ -23,7 +26,13 @@ body {
     margin-top:40px;
     border-radius: 5px;;
 }
-
+.imgclick * {
+    transition:all 0.7s ease;
+}
+.imgclick:hover *{
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    border-radius:6px;
+}
 .topsection {
     text-align: center;
     font-family: 'Noto Serif', serif;
@@ -294,7 +303,8 @@ section h1 {
     
 }
 .publication li a:hover{
-    color:rgb(5, 128, 5);
+
+    color:rgb(254, 119, 0);
     font-size:28px;
 }
 .publication li a {
@@ -311,6 +321,9 @@ section ul li {
 footer {
     color:white;
     font-size:36px;
+    background-image: url('../img/dirt2.png');
+    background-repeat: no-repeat;
+    background-size:100% auto;
 }
 .footerhr {
     border-color:white;
