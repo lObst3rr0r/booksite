@@ -21,7 +21,7 @@ body {
     width:60%;
     margin-left:auto;
     margin-right:auto;
-    border: 3px solid #dadada;
+    border: 3px solid rgba(0, 0, 0, 0.3);
     border-radius: 9px;
     margin-top:40px;
     border-radius: 5px;;
@@ -327,4 +327,18 @@ footer {
 }
 .footerhr {
     border-color:white;
+}
+.socials{
+    float:left;
+    padding-left:10px;
+}
+.socials img{
+    height:30px;
+    transition:all 0.2s ease-in;
+}
+
+.socials img:hover{
+    height:31px;
+    border:rgba(255, 255, 255,0.6) 2px solid;
+    border-radius:50%;
 }
