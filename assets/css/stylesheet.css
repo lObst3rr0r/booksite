@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&family=Poppins&display=swap');
 body {
-    background-image: url('../img/bg.jpeg'), url('../img/dirt.jpg'), url('../img/dirt2.png');
+    background-image: url('../img/bg.jpg'), url('../img/dirt.jpg'), url('../img/dirt2.png');
     background-repeat: no-repeat;
     background-size: contain, 100% 100%, 100% 100%;
     background-position: center top, center center, center bottom;
@@ -333,12 +333,58 @@ footer {
     padding-left:10px;
 }
 .socials img{
+    padding-left:15px;
+    padding-top:10px;
     height:30px;
+    opacity:0.5;
     transition:all 0.2s ease-in;
 }
 
 .socials img:hover{
-    height:31px;
-    border:rgba(255, 255, 255,0.6) 2px solid;
-    border-radius:50%;
+    opacity:1;
 }
+.containercomment{
+    background-color:rgba(255, 255, 255, 0.2);
+    
+    padding-left:1%;
+    margin-top:1%;
+    margin-left:10px;
+    margin-right:10px;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-right:1%;
+    border-radius:10px;
+}
+
+h4 {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+
+}
+#cpymsg {
+    background-color: rgba(35, 143, 35, 0.8);
+    height: 50px;
+    width: 150px;
+    padding-top: 25px;
+    margin-left:10px;
+    margin-bottom:50px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity:0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 9999;
+  }
+  #cpymsg.show {
+    transform: translateX(0%);
+    
+  }
+

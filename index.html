@@ -13,6 +13,7 @@
     <div class="upbutton" id="btnup">
         <button onclick="topFunction()" style="display:block;"><img src="assets/img/arrow.png" rel="arrow"></button>
     </div>
+
     <div class="maincontainer">
     <div class="topsection">
             <div class="socials">    
@@ -20,7 +21,7 @@
             <a rel="website-link"target="_blank"href="http://regardsdupilat.free.fr/menu.html"><img src="assets/img/world-wide-web.png"></a>
 
             
-        </div><br><br>
+        </div><br><br><br>
             <img class="avatarimg" src="assets/img/avatar.jpg" alt="Avatar">
             <h2>Philippe Monteil</h2>
             <hr>
@@ -32,7 +33,7 @@
                 </ul>
             </div>
     </div>
-    
+
     <div class="bottomsection">
         <section class="hidden">
             <h1>Le temps d'une histoire</h1>
@@ -83,25 +84,31 @@ Passionné de préhistoire et de spéléologie, il cherche à comprendre les mys
             <a class="imgclick" target="_blank"href="http://cesame.ardeche.free.fr/?page_id=18"><img class="decoimage"style="width:300px;"src="assets/img/cesame.png" alt="cesamewebsiteimage"></a>
         </div>
     </div>
+    
         </section>
         <hr>
+        <span id="cpymsg">Email copié!</span>
+
         <section class="hidden">
             <h1>Acheter le livre:</h1>
             <img class="coverbook"src="assets/img/couvertureTDH.png" alt="couverturelivre">
-            <h3>Retrouver ce livre sur:</h3>
+            <h3>Pour les commandes à retirer sur Pélussin par mail à <span class="emailbtn"onclick="cpyfunction()"style="font-family: 'Noto Serif', serif;font-weight:bolder;" id="cpyemail">monteil.ph@free.fr</span></h3>
+
+            <div class="containercomment">
+                <h4>
+                objet : commande LTDH
+                prix en commande directe 8 €
+                (prix public 12 € )</h4>
+            </div>
             <div class="row">
             <!-- LIENS -->
             </div>
         </section>
-        <hr>
-        <section class="hidden">
-            <h1>Contact:</h1>
-            <h3>Email : <span class="emailbtn"onclick="cpyfunction()"style="font-family: 'Noto Serif', serif;font-weight:bolder;" id="cpyemail">monteil.ph@free.fr</span></h3>
-            <span id="cpymsg"style="background-color: rgba(35, 143, 35, 0.8);height:50px;width:150px;padding-top:35px;font-size:20px;border-radius:5px;font-family: 'Josefin Sans', sans-serif;padding-left:40px;color:white;display:none;">Email copié!</span>
-        </section>
+
         </div>
     </div>
     <br>
+    <div id="cpymsg">Email copié!</div>
 
 </body>
 </html>

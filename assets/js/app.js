@@ -22,10 +22,21 @@ function scrollFunction() {
   }
 }
 function cpyfunction(){
+
     var copyText = document.getElementById("cpyemail");
     navigator.clipboard.writeText("monteil.ph@free.fr");
-    document.getElementById("cpymsg").style.display = "initial";
-}
+    var cpymsg = document.getElementById("cpymsg");
+    cpymsg.style.opacity = "1";
+
+    cpymsg.classList.add("show");
+    setTimeout(function() {
+      cpymsg.classList.remove("show");
+      cpymsg.style.opacity = "0";
+
+    }, 2000);
+
+  }
+
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   window.scrollTo({top: 0, behavior: 'smooth'});
