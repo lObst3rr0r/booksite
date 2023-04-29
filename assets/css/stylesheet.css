@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Noto+Serif&family=Poppins&display=swap');
 body {
-    background-image: url('../img/bg.jpg'), url('../img/dirt.jpg'), url('../img/dirt2.png');
+    background-image: url('../img/bg.jpg'), url('../img/dirt.jpg');
     background-repeat: no-repeat;
     background-size: contain, 100% 100%, 100% 100%;
-    background-position: center top, center center, center bottom;
-    background-attachment: scroll, fixed, scroll;
+    background-position: center top, center center;
+    background-attachment: scroll, fixed;
 
     background-color: rgb(156, 157, 171);
     padding:0;
