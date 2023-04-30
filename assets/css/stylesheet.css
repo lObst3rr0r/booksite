@@ -16,7 +16,7 @@ body {
     height:600px;
 }
 .maincontainer{
-    background-color: rgba(60, 80, 66, 0.9);
+    background-color: rgba(32, 32, 32, 0.9);
     height:100%;
     width:60%;
     margin-left:auto;
@@ -96,7 +96,7 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     margin-left:20%;
     margin-right:20%;
-    text-align:center;
+    text-align:start;
     font-size:25px;
     font-weight:lighter;
     font-style:italic;
@@ -212,6 +212,11 @@ section {
         height:200px;
         width:200px;
     }
+    .containercomment{
+        font-size:12px;
+        width:300px;
+
+    }
 }
 @media screen and (max-width:500px){
     .coverbook{
@@ -243,6 +248,12 @@ section {
         margin-left:5%;
         text-align: left;
         margin-right:25%;
+    }
+    h3{
+        font-size:12px;
+    }
+    img{
+        
     }
 }
 
@@ -348,6 +359,7 @@ footer {
     
     padding-left:1%;
     margin-top:1%;
+    margin-bottom:5%;
     margin-left:10px;
     margin-right:10px;
     padding-top:1%;
