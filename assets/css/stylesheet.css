@@ -257,7 +257,12 @@ section {
 
 }
 
-
+@media screen and (max-width:600px){
+    .decoimage img {
+        height: 150px;
+        width: 100px;
+    }
+}
 a:hover{
     cursor: pointer;
 }
